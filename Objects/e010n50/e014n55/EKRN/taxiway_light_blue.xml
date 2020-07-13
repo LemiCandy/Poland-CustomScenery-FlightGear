@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PropertyList>
+       
+<path>taxiway_light_blue.ac</path>
+
+<!-- LOD for Taxiway light housing -->
+<animation>
+	<type>range</type>
+	<object-name>txway_light_blue_01</object-name>
+	<min-m>0</min-m>
+	<max-m>500</max-m>
+</animation>
+
+
+<model>
+    <path>BlueLight6000.ac</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.100 </z-m>
+      <pitch-deg> 0.00</pitch-deg>
+	  <heading-deg>0.0 </heading-deg>
+    </offsets>
+</model>
+
+<animation>
+        <type>noshadow</type>
+        <object-name>BlueLight6000</object-name>
+    </animation>
+
+    <animation>
+        <type>alpha-test</type>
+        <alpha-factor>0.01</alpha-factor>
+    </animation>
+
+<animation>
+    <type>select</type>
+    <object-name>BlueLight6000</object-name>
+    <condition>
+       <greater-than>
+          <property>sim/time/sun-angle-rad</property>
+          <value>1.57</value>
+       </greater-than>
+    </condition>
+</animation>
+
+    <animation>
+	  <type>range</type>
+	  <min-m>0</min-m>
+	  <max-m>7000</max-m>
+    </animation>
+
+    <animation>
+        <type>billboard</type>
+        <object-name>BlueLight6000</object-name>
+        <spherical type="bool">true</spherical>
+    </animation>
+
+  <animation>
+    <type>dist-scale</type>
+    <object-name>BlueLight6000</object-name>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0.025</dep>
+      </entry>
+      <entry>
+        <ind>300</ind>
+        <dep>0.1</dep>
+      </entry>
+      <entry>
+        <ind>1500</ind>
+        <dep>0.2</dep>
+      </entry>
+      <entry>
+        <ind>6000</ind>
+        <dep>0.3</dep>
+      </entry>
+    </interpolation>
+  </animation>
+
+       
+</PropertyList>
