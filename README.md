@@ -1,5 +1,6 @@
 ﻿# custom-scenery-polish
-Niestandardowa sceneria Polski dla Flightgear.
+(Niestandardowa sceneria Polski dla Flightgear)
+
 
 Elevation data – SRTM-3
 
