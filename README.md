@@ -10,7 +10,7 @@ Roads, railways – OSM
 
 All layout are airports in version 1000.
 
-I recommend to the scene: http://pattenflightgear.wifeo.com/textures-du-terrain.php
+You can also use https://sites.google.com/site/fgmakapl/home/download for EPWR (Wrocław) International Airport
 
 Product Documentation / Procedures contain procedures departure of SID and STAR procedures.
 The file is placed in the airports Scenery / Airports / X / X / X and change the name to XXXX.procedures.xml
